@@ -36,7 +36,6 @@ The project employs a multidisciplinary approach, combining concepts from:
   - **Pandas, NumPy:** Data manipulation and analysis.
   - **Matplotlib, Seaborn:** Data visualization.
   - **Scikit-learn:** Machine learning algorithms.
-  - **Flask (for future expansion):** Web framework for deploying machine learning models.
 
 ## Future Work
 
