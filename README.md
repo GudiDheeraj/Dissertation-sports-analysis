@@ -1,6 +1,6 @@
-# Dissertation-sports-analysis
+# Dissertation on sports analysis
 
-## Dissertation Sports Analysis
+## This project is a part of masters thesis submitted to Durham University
 
 Explore the full dissertation on sports analysis by visiting the link below:
 
