@@ -1,14 +1,54 @@
-# Dissertation on sports analysis
+# Sports Analysis Project: Durham County U13 Player Ratings
 
-## This project is a part of masters thesis submitted to Durham University
+## Overview
 
-The link below directs you to a webpage that outlines the results and includes a player rating calculator for Durham County. This is a supplementary project, not the main focus, and could be expanded in the future by deploying advanced machine learning models or neural networks through Flask. However, this additional work is outside the scope of the current project.
+This project is part of a Master's thesis submitted to Durham University, focusing on sports analysis, particularly identifying the top under-13 players in Durham County. The project leverages a combination of unsupervised machine learning techniques and the Analytic Hierarchy Process (AHP) to achieve this objective.
 
-The primary goal of this project is to identify the top under-13 players in Durham County, achieved using unsupervised machine learning techniques and the Analytic Hierarchy Process (AHP).
+The project also includes a supplementary tool—a Player Rating Calculator for Durham County—available through the link below. This calculator is a demonstration of the project's potential for future expansion, where advanced machine learning models or neural networks could be integrated using Flask. However, such extensions are beyond the scope of this current project.
 
-[Dissertation Sports Analysis](https://gudidheeraj.github.io/Dissertation-sports-analysis/)
+[Explore the Player Rating Calculator and Results](https://gudidheeraj.github.io/Dissertation-sports-analysis/)
 
-This project delves into various aspects of sports analysis, providing insights and visualizations that can enhance understanding of the subject matter. Click the link above to explore the details.
+## Project Goals
 
-The project utilizes concepts from various disciplines, including HTML, CSS, JavaScript, web scraping, web crawling, unsupervised machine learning, supervised machine learning, Python, data visualization, ethics in data science, and statistics.
+1. **Primary Goal:** Identify the top under-13 players in Durham County using unsupervised machine learning and AHP.
+2. **Extended work or further work done:** Develop a supplementary Player Rating Calculator to demonstrate potential expansions using web technologies.
 
+## Methodology
+
+The project employs a multidisciplinary approach, combining concepts from:
+
+- **Web Technologies:**
+  - **HTML, CSS, JavaScript** for frontend development.
+  - **Web Scraping and Crawling** to gather relevant sports data.
+  
+- **Data Science and Machine Learning:**
+  - **Unsupervised Machine Learning:** Clustering techniques to analyze player performance data.
+  - **Analytic Hierarchy Process (AHP):** A structured technique for organizing and analyzing complex decisions.
+  - **Data Visualization:** Python libraries to create insightful visual representations of the data.
+  
+- **Ethics in Data Science:** Ensuring responsible and ethical use of data, particularly with respect to minors.
+
+## Technologies Used
+
+- **Python:** The primary programming language for data analysis and machine learning.
+- **HTML/CSS/JavaScript:** For developing the interactive web interface.
+- **Libraries and Frameworks:**
+  - **Pandas, NumPy:** Data manipulation and analysis.
+  - **Matplotlib, Seaborn:** Data visualization.
+  - **Scikit-learn:** Machine learning algorithms.
+  - **Flask (for future expansion):** Web framework for deploying machine learning models.
+
+## Future Work
+
+While the current project focuses on identifying top players, future work could involve:
+
+- **Deploying Advanced Machine Learning Models:** Using Flask to create a web-based application for real-time player rating.
+- **Integration of Neural Networks:** Enhancing the predictive capabilities of the player rating system.
+- **Extended Data Analysis:** Including more features or additional datasets to improve the accuracy and robustness of player identification.
+
+## How to Use
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/yourusername/Dissertation-sports-analysis.git
