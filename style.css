@@ -1,0 +1,301 @@
+:root {
+  /* CSS Variables for easy customization */
+  --primary-color: rgb(255, 165, 0);
+  --secondary-color: rgb(255, 140, 0);
+  --hover-color: #FF8C00;
+  --active-color: #8B4000;
+  --text-color: #fff;
+  --bg-color: rgba(0, 0, 0, 0.5);
+  --font-family: 'Lato', sans-serif;
+  --container-bg: #f5f5f5;
+  --container-shadow: rgba(0, 0, 0, 0.1);
+  --calculation-bg: rgba(0, 0, 0, 0.5);
+  --text-shadow-color: rgba(0, 0, 0, 0.8);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url('images/vv.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: var(--font-family);
+  color: var(--text-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.zoom-controls {
+  display: flex;
+  align-items: right;
+  margin-bottom: 5px;
+
+}
+
+#reset-zoom {
+  background: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 6px 6px;
+  color: white;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background 0.3s ease;
+
+}
+
+#reset-zoom:hover {
+  background: var(--secondary-color);
+}
+
+#zoom-slider {
+  width: 150px;
+  margin-right: 10px;
+}
+
+#zoom-percentage {
+  font-size: 14px;
+  color: #333;
+}
+
+footer {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+
+.github-link {
+  color: var(--text-color);
+}
+
+.github-link p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.github-button {
+  display: block;
+  margin: 10px auto 0;
+  padding: 10px 10px;
+  font-size: 16px;
+  color: var(--text-color);
+  background-color: var(--primary-color);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.github-button:hover {
+  background-color: var(--hover-color);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 95%;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: var(--container-bg);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 15px var(--container-shadow);
+  flex-grow: 1;
+}
+
+.graph-section {
+  flex: 1 1 65%;
+  margin-right: 20px;
+}
+
+.calculation-section {
+  flex: 1 1 30%;
+  background: var(--calculation-bg) url('images/main.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 8px;
+  color: var(--primary-color);
+  font-size: 1.2em;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px var(--text-shadow-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 8px 16px rgba(0, 0, 0, 0.4);
+  transform: perspective(1000px) rotateX(3deg) rotateY(3deg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.calculation-section:hover {
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6), 0 16px 32px rgba(0, 0, 0, 0.5);
+}
+
+.chart-wrapper {
+  width: 95%;
+  box-shadow: 1px 1px 10px 5px var(--container-shadow);
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  display: flex;
+  position:relative;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  height: 80%;
+  min-height: 300px;
+  max-height: 500px; /* Set a max-height for the container */
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chart-wrapper img, .chart-wrapper canvas {
+  max-width: 100%; /* Ensure the image or canvas scales within the container */
+  height: auto;
+}
+
+.chart-wrapper:hover {
+  transform: perspective(1000px) scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6), 0 16px 32px rgba(0, 0, 0, 0.5);
+}
+
+.page-header {
+  text-align: center;
+  padding: 20px;
+  background: var(--bg-color);
+  width: 100%;
+}
+
+.page-header h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.header label {
+  font-size: 1.2em;
+  margin-right: 10px;
+}
+
+.header select {
+  font-size: 1em;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+}
+
+.buttons button {
+  margin: 0 10px;
+  flex: 1;
+}
+
+#input-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+#input-container > div {
+  flex: 1 1 45%;
+}
+
+input[type="number"] {
+  width: 90%;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  height: 40px;
+  outline: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+  width: 100%;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background: var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+button:active,
+button:focus {
+  background: var(--active-color);
+  color: white;
+  transform: translateY(0);
+}
+
+.result {
+  margin-top: 20px;
+}
+
+.result h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.result p {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .graph-section, .calculation-section {
+    margin-right: 0;
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header label, .header select {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .buttons button {
+    margin: 5px 0;
+    
+  }
+
+  #input-container > div {
+    flex: 1 1 100%;
+  }
+
+  footer {
+    position: static;
+    text-align: center;
+    margin-top: 20px;
+  }
+}

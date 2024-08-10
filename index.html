@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Interactive Chart and Calculator</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="page-header">
+    <h1>Durham County Under 13 Players Rating</h1>
+  </header>
+  <main>
+    <div class="header">
+      <label for="player-type">Select Player Type:</label>
+      <select id="player-type">
+        <option value="batsman">Batsman</option>
+        <option value="bowler">Bowler</option>
+      </select>
+    </div>
+    <div class="container">
+      <div class="graph-section">
+        <div class="buttons">
+          <button id="add-bar-graph" class="active">3D Cluster Graphs</button>
+          <button id="add-histograph">Rating Distribution</button>
+          <button id="add-circle-graph">Rating of Players</button>
+        </div>
+
+        <div class="chart-wrapper"></div>
+<div class="zoom-controls">
+    <button id="reset-zoom">Reset</button>
+    <input type="range" id="zoom-slider" min="70" max="110" value="100">
+    <span id="zoom-percentage">100%</span>
+  </div>
+
+      </div>
+
+      <div class="calculation-section">
+        <h2>Calculate Rating(1-10):</h2>
+        <div id="input-container">
+          <!-- Input fields will be dynamically added here -->
+        </div>
+        <button id="calculate-btn">Calculate</button>
+        <div class="result">
+          <h3>Result:</h3>
+          <p id="result-text"></p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <footer>
+    <div class="github-link">
+      
+      <a href="https://github.com/GudiDheeraj/dissertation" target="_blank" class="github-button">View Project</a>
+    </div>
+  </footer>
+
+  <script src="./main.js"></script>
+</body>
+</html>
