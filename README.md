@@ -4,14 +4,15 @@
 
 This project is part of a Master's thesis submitted to Durham University, focusing on sports analysis, particularly identifying the top under-13 players in Durham County. The project leverages a combination of unsupervised machine learning techniques and the Analytic Hierarchy Process (AHP) to achieve this objective.
 
-The project also includes a supplementary tool—a Player Rating Calculator for Durham County—available through the link below. This calculator is a demonstration of the project's potential for future expansion, where advanced machine learning models or neural networks could be integrated using Flask. However, such extensions are beyond the scope of this current project.
+The project also includes a supplementary tool—a Player Rating Calculator for Durham County—available through the link below, which was made with a simple ML model. This calculator demonstrates the project's potential for future expansion, where advanced machine learning models or neural networks could be integrated using Flask. However, such extensions are beyond the scope of the current project.
+
 
 [Explore the Player Rating Calculator and Results](https://gudidheeraj.github.io/Dissertation-sports-analysis/)
 
 ## Project Goals
 
-1. **Primary Goal:** Identify the top under-13 players in Durham County using unsupervised machine learning and AHP.
-2. **Extended work or further work done:** Develop a supplementary Player Rating Calculator to demonstrate potential expansions using web technologies.
+1. **Primary Goal:** Identify the top under-13 players in Durham County.
+2. **Extended Work or Further Enhancements:** Developed a supplementary Player Rating Calculator to demonstrate the potential for expansion using web technologies.
 
 ## Methodology
 
@@ -41,9 +42,7 @@ The project employs a multidisciplinary approach, combining concepts from:
 
 While the current project focuses on identifying top players, future work could involve:
 
-- **Deploying Advanced Machine Learning Models:** Using Flask to create a web-based application for real-time player rating.
 - **Integration of Neural Networks:** Enhancing the predictive capabilities of the player rating system.
-- **Extended Data Analysis:** Including more features or additional datasets to improve the accuracy and robustness of player identification.
 
 ## How to Use
 
