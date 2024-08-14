@@ -96,7 +96,7 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   width: 95%;
-  max-width: 1200px;
+  max-width: 1330px;
   margin: 20px auto;
   background-color: var(--container-bg);
   padding: 20px;
