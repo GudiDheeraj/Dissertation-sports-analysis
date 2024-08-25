@@ -84,28 +84,32 @@ function calculateBatsman() {
   const innings = parseFloat(document.getElementById('input4').value) || 0;
   const average = parseFloat(document.getElementById('input5').value) || 0;
   const strikeRate = parseFloat(document.getElementById('input6').value) || 0;
+  const highestscore = parseFloat(document.getElementById('input9').value) || 0;
   const averageRuns = parseFloat(document.getElementById('input7').value) || 0;
   const averageBallsFaced = parseFloat(document.getElementById('input8').value) || 0;
-  const averageBoundaries = parseFloat(document.getElementById('input9').value) || 0;
   const averageStrikeRate = parseFloat(document.getElementById('input10').value) || 0;
 
   // Calculate the result based on the provided formula
-  const result = 0.0191 * runs
-                + 0.0065 * boundaries
-                - 0.2531 * (1 / (dismissal || 1))  // Avoid division by zero
-                - 0.0216 * innings
-                + 0.0067 * average
-                + 0.0075 * strikeRate
-                + 0.0442 * averageRuns
-                - 0.007 * averageBallsFaced
-                + 0.0253 * averageBoundaries
-                + 0.0019 * averageStrikeRate;
+  const result = 0.23 * runs
+                + 0.13 * boundaries
+                + 0.02 * (1 / (dismissal || 1))  // Avoid division by zero
+                + 0.03 * innings
+                + 0.1 * average
+                + 0.073 * strikeRate
+                + 0.07 * averageRuns
+                + 0.05 * averageBallsFaced
+                + 0.12 * highestscore
+                + 0.063 * averageStrikeRate;
 
   // Round the result to the next integer
   const roundedResult = Math.ceil(result);
 
   // Display the result with accuracy information
-  resultText.textContent = `The result is: ${roundedResult} (80% accuracy)`;
+  resultText.textContent = `The result is: ${roundedResult} (Accuracy: 0.8382
+Precision: 0.8472
+Recall: 0.8382
+F-measure (F1 Score): 0.8361
+)`;
 }
 
 // Function to calculate result for bowler based on provided formula
@@ -122,20 +126,23 @@ function calculateBowler() {
   const economyRate = parseFloat(document.getElementById('input8').value) || 0;
 
   // Calculate the result based on the provided formula
-  const result = 0.0108 * (1 / (runsConceded || 1))  // Avoid division by zero
-                + 0.0194 * wickets
-                + 0.0549 * extras
-                + 0.0342 * ballsBowled
-                + 0.0087 * innings
-                - 0.0031 * average
-                + 0.0005 * strikeRate
-                + 0.0014 * economyRate;
+  const result = 0.061 * (1 / (runsConceded || 1))  // Avoid division by zero
+                + 0.045 * wickets
+                + 0.078 * extras
+                + 0.113 * ballsBowled
+                + 0.02 * innings
+                + 0.024 * average
+                + 0.024 * strikeRate
+                + 0.61 * economyRate;
 
   // Round the result to the next integer
   const roundedResult = Math.ceil(result);
 
   // Display the result with accuracy information
-  resultText.textContent = `The result is: ${roundedResult} (82% accuracy)`;
+  resultText.textContent = `The result is: ${roundedResult} (Accuracy: 0.9739
+Precision: 0.9750
+Recall: 0.9739
+F-measure (F1 Score): 0.9736)`;
 }
 
 // Function to handle button activation
