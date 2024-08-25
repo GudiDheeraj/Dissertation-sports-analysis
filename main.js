@@ -110,6 +110,8 @@ Precision: 0.8472
 Recall: 0.8382
 F-measure (F1 Score): 0.8361
 )`;
+  resultText.style.color = "orange";
+
 }
 
 // Function to calculate result for bowler based on provided formula
@@ -143,6 +145,8 @@ function calculateBowler() {
 Precision: 0.9750
 Recall: 0.9739
 F-measure (F1 Score): 0.9736)`;
+  resultText.style.color = "orange";
+
 }
 
 // Function to handle button activation
