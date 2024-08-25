@@ -43,6 +43,9 @@ body {
   transition: background 0.3s ease;
 
 }
+#result-text{
+  color : orange;
+}
 
 #reset-zoom:hover {
   background: var(--secondary-color);
