@@ -49,4 +49,4 @@ While the current project focuses on identifying top players, future work could 
 1. **Clone the Repository:**
 
    ```bash
-   [git clone https://github.com/yourusername/Dissertation-sports-analysis.git](https://github.com/GudiDheeraj/Dissertation-sports-analysis)
+   git clone https://github.com/yourusername/Dissertation-sports-analysis.git
