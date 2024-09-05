@@ -130,12 +130,12 @@ function calculateBowler() {
   // Calculate the result based on the provided formula
   const result = 0.061 * (1 / (runsConceded || 1))  // Avoid division by zero
                 + 0.045 * wickets
-                + 0.078 * extras
+                - 0.078 * extras
                 + 0.113 * ballsBowled
                 + 0.02 * innings
-                + 0.024 * average
-                + 0.024 * strikeRate
-                + 0.61 * economyRate;
+                - 0.024 * average
+                - 0.024 * strikeRate
+                - 0.61 * economyRate;
 
   // Round the result to the next integer
   const roundedResult = Math.ceil(result);
